@@ -72,7 +72,10 @@ module.exports = configure(function (/* ctx */) {
       // extendViteConf (viteConf) {},
       // viteVuePluginOptions: {},
 
-      vitePlugins: [['unplugin-vue-router/vite', {}]],
+      vitePlugins: [
+        ['unplugin-vue-router/vite', {}],
+        ['vite-plugin-vue-layouts', {}],
+      ],
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#devServer
